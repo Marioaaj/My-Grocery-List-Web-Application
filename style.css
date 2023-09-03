@@ -1,0 +1,83 @@
+:root {
+    --background:	#292d3e;
+    --foreground:	#959dcb;
+    --comment:	#676e95;
+    --accent:	#c3e88d;
+    --redish:	#ff5370;
+    --orangish:	#f78c6c;
+    --yellowish:	#ffcb6b;
+    --greenish:	#c3e88d;
+    --bluish:	#82aaff;
+    --purplish:	#c792ea;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    margin: 0.5em;
+    font-size: 4em;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    color: var(--accent)
+}
+
+.newGorceryForm{
+    display: flex;
+
+}
+
+#newGrocery {
+    background-color: white;
+    color: var(--commit);
+    padding: 0.5em;
+    width: 20em;
+    font-size: 1.5em;
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+#addBtn {
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+#addBtn:hover{
+    background-color: var(--purplish);
+}
+
+#grocerylist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 21em;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    background-color: var(--comment);
+}
+
+.groceryItem {
+    background-color: white;
+    color: var(--background);
+    margin: 0.5em;
+    width: 24em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.groceryItem:hover {
+background-color: var(--purplish);
+color: var(--bluish);
+font-weight: bold;
+
+}
