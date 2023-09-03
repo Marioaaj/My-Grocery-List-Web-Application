@@ -1,0 +1,6 @@
+hello world
+First you add with "git add ."
+Second you commit with git commit -m "name of commit here"
+Third you commit remote to the link add orgin example "git remote add origin https://github.com/Marioaaj/My-Grocery-List-Web-Application.git"
+Forth you push by doing "git push -u origin master"
+npx vite .
