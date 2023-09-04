@@ -1,8 +1,8 @@
-import {localDB} from 'https://cdn.skypack.dev/peadb'
-import shortid from 'https://cdn.skypack.dev/shortid';
-import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import { localDB } from 'https://cdn.skypack.dev/peadb'
+import shortid from 'https://cdn.skypack.dev/shortid'
+import confetti from 'https://cdn.skypack.dev/canvas-confetti'
 
-const db =new localDB('grocery-list-db')
+const db = new localDB('grocery-list-db')
 const groceries = db.getAll() || []
 
 const groceryList = document.getElementById('groceryList')
@@ -25,12 +25,12 @@ const addGrocery = newGrocery => {
     groceryList.appendChild(createGroceryElement(newGrocery))
 }
 
-addBtn.addEventListener('click', e =>{
+addBtn.addEventListener('click', e => {
     e.preventDefault()
     const value = newGroceryInput.value
-    const key = shortid.generate()
     if (value) {
-        addGrocery( key, value )
+        const key = shortid.generate()
+        addGrocery({ key, value })
         db.set(key, value)
         newGroceryInput.value = null
     }
